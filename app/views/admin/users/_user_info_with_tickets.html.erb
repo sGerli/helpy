@@ -29,25 +29,6 @@
         </span>
       </div>
 
-      <!-- pcavalot / if user signed in to helpy with teamapp display registered user yes and teamapp id else unknown -->
-      <div id="user-contact-info" class="user-info">
-        <div class="tiny-header">Registered User:</div>
-        <% if user.provider == 'team_app' %>
-          <p>Yes</p>
-          <br>
-          <div class="tiny-header">Team App User ID:</div>
-          <p><%= user.uid %></p>
-        <% else %>
-          <p>Unknown</p>
-        <% end %>
-      </div>
-
-      <!-- pcavalot / add device user selected in new question form -->
-      <div id="user-contact-info" class="user-info">
-        <div class="tiny-header">Selected Device:</div>
-        <p><%= @topic.device %></p>
-      </div>
-
       <!--
       <div id="user-contact-info" class="user-info">
         <div class="tiny-header"><%= t(:contact_info, default: "Contact") %>:</div>

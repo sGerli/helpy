@@ -28,10 +28,6 @@ class OmniauthCallbacksController < Devise::OmniauthCallbacksController
     handle_redirect('devise.facebook', 'Facebook')
   end
 
-  def team_app
-    handle_redirect('devise.teamapp_uid', 'TeamApp')
-  end
-
   private
 
   def handle_redirect(_session_variable, _kind)

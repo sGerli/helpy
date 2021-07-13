@@ -47,9 +47,6 @@ mail_domain: #Enter the heroku.com if you are on heroku, otherwise enter your do
 
 omniauth:
   providers:
-   team_app:
-     id: <%= ENV['TA_AUTH_ID'] %>
-     secret: <%= ENV['TA_AUTH_SECRET'] %>
    facebook:
      id: <%= ENV['FACEBOOK_AUTH_ID'] %>
      secret: <%= ENV['FACEBOOK_AUTH_SECRET'] %>

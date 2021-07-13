@@ -16,7 +16,7 @@ es:
   login: "Iniciar"
   logout: "Salir"
   register: "Registrarse"
-  back_to: "Volver"
+  back_to: "Volver a"
   welcome_back: "Bienvenido de nuevo %{username}"
   your_profile: "Tu perfil"
   your_tickets: "Tus tickets"

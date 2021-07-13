@@ -161,8 +161,6 @@ gem 'best_in_place', '~> 3.1'
 gem 'helpy_onboarding', git: 'https://github.com/helpyio/helpy_onboarding', branch: 'master'
 gem 'helpy_imap', git: 'https://github.com/helpyio/helpy_imap', branch: 'master'
 
-# debugging
-gem 'honeybadger', '~> 4.0'
 
 group :development, :test do
   # Audit Gemfile for security vulnerabilities
@@ -220,9 +218,6 @@ group :production do
   # Uncomment this gem for Heroku:
   # gem 'rails_12factor'
   gem 'unicorn'
-
-  # Team App
-  gem 'rollbar'
 end
 
 ruby '>= 2.2', '< 3.0'

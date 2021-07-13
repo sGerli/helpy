@@ -267,7 +267,6 @@ ActiveRecord::Schema.define(version: 20200430232451) do
     t.integer  "priority",         default: 1
     t.decimal  "spam_score",       default: 0.0
     t.text     "spam_report",      default: ""
-    t.string   "device"
   end
 
   add_index "topics", ["kind"], name: "index_topics_on_kind", using: :btree

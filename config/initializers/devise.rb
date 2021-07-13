@@ -2,7 +2,6 @@
 # Many of these configuration options can be set straight in your model.
 
 require 'devise/custom_failure'
-require 'omniauth/strategies/team_app'
 require "omniauth-facebook"
 
 Devise.setup do |config|

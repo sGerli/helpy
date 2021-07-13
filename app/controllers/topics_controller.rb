@@ -26,8 +26,6 @@
 #  channel          :string           default("email")
 #  kind             :string           default("ticket")
 #  priority         :integer          default(1)
-#  ##               custom additions              ##
-#  device           :string
 #
 
 class TopicsController < ApplicationController
@@ -113,8 +111,7 @@ class TopicsController < ApplicationController
       private: params[:topic][:private],
       doc_id: params[:topic][:doc_id],
       team_list: params[:topic][:team_list],
-      channel: 'web',
-      device: params[:topic][:device]
+      channel: 'web'
     )
 
     @post = @topic.posts.new(

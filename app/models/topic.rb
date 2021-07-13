@@ -25,8 +25,6 @@
 #  channel          :string           default("email")
 #  kind             :string           default("ticket")
 #  priority         :integer          default(1)
-#  ##               custom additions              ##
-#  device           :string
 #
 
 class Topic < ActiveRecord::Base
